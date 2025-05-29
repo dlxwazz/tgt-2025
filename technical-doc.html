@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Technical Document | tGt</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+      
+  <style>
+
+    .ul li{
+       list-style-type: none !important;
+    }
+
+
+    #header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  background-color: #2d465e;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #05e048;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding: 0 0 8px 26px;
+  position: relative;
+  
+}
+
+.about .content ul i {
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: -3px;
+  color: #05e048;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+.about h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  padding-bottom: 10px;
+}
+
+.about ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Facts
+--------------------------------------------------------------*/
+.facts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #05e048; font-weight: bold;
+}
+
+.facts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+    /*--------------------------------------------------------------
+# Departments Section
+--------------------------------------------------------------*/
+.departments {
+  overflow: hidden;
+}
+
+.departments .nav-tabs {
+  border: 0;
+}
+
+.departments .nav-link {
+  border: 0;
+  padding: 12px 15px 12px 0;
+  transition: 0.3s;
+  color: var(--default-color);
+  border-radius: 0;
+  border-right: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.departments .nav-link:hover {
+  color: #05e048;
+}
+
+.departments .nav-link.active {
+  color: #05e048;
+  border-color: #05e048;
+  background-color: var(--background-color);
+}
+
+.departments .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.departments .details h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.departments .details p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.departments .details p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .departments .nav-link {
+    border: 0;
+    padding: 15px;
+  }
+
+  .departments .nav-link.active {
+    color: #05e048;
+    background: #05e048;
+  }
+}
+
+  </style>
+
+  <!-- ======================================================
+  ======================================================== -->
+</head>
+
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+      <a href="index.html" class="logo"><img src="assets/img/akram.png" alt="" class="img-fluid"> <span style="color: #fff; font-family: Raleway, sans-serif !important;">tGt </span> </a>
+
+      <a href="contactus.html" class="get-started-btn scrollto">Contact Us</a>
+      
+
+<!-- freeze end -->
+    </div>
+
+    
+    
+  </header><!-- End Header -->
+
+  <br> <br>
+    <main class="main mt-5">
+
+
+    <!-- WHİTEPAPER Section -->
+    <section id="departments" class="departments section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1 style="font-size: 26px; font-weight: 600;">Technical Document</h1>
+        <p>View the Technical Document below </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#departments-tab-1">WHAT IS THE GAMBLER TOKEN?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2">How to play?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3">Prize distribution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4">Scalability</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-5">Applicability</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-6">Security</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-7">Decentralized Autonomous Organizations (DAO)</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-8">Token economy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show " id="departments-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>WHAT IS THE GAMBLER TOKEN?</h3>
+        <div class="content">
+
+              <ul style="list-style-type: none;">
+             <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> Gambler Network is an ethereum erc-20 based play-win crypto token project that aims to create virtual slot machines using decentralized applications.</li>
+              <li><i class="ri-check-double-line" style="text-align: justify !important;"></i>THE GAMBLER aims to create a decentralized game of chance with transparent and simple rules .</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i>Gambler uses decentralized applications to create a public virtual slot machine for its users. This virtual slot machine has 7 reels side by side, and each reel has 7 different fruit images.</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> Players start the game with the start button by placing bets of 1 tGt token for each game. After the reels stop, if the symbols match in a specified combination, the player wins the prize.</li>
+
+            </ul>
+        </div>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+              <!-- new -->
+              <div class="tab-pane" id="departments-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>How to play?</h3>
+
+                                        <ul style="list-style-type: none;">
+             <li><i class="ri-check-double-line" style="text-align: justify !important;"></i>The gambler will build his slot game on decentralized applications. Every player can play the decentralized virtual slot (dapp) game by obtaining a Virtual ethereum blockchain wallet.</li>
+              <li><i class="ri-check-double-line" style="text-align: justify !important;"></i>The gameplay is simple and easy, similar to other slot games.There are 7 reels in the game. There are pineapple, pear, banana, apple, strawberry, watermelon and grape symbols on each reel. Players play each game with 1 tGt token.</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i>Players win prizes when 3,4,5,6,7 of the same fruits line up after the reels stop. It does not matter which fruit or how they are listed.</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> But when 3 identical fruits are aligned in the E category, these 3 fruits must be the same as the fruit on the first reel.</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> For example, if there is a banana symbol on the first reel and 2 more bananas are aligned on the other reels, the player wins a prize. There is a banana symbol on the first reel, and the player cannot win a prize when there are 3 strawberry, 2 apple and 1 pear symbols on the other reels.</li>
+
+
+            </ul>
+                    
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Prize distribution</h3>
+                    <p class="fst-italic" style="text-align: justify;">Players instantly see the probability of winning and the total liquidity in each game. The tokens in the games played by all players are transferred to the common prize pool. The reward that the winning player will receive is calculated proportionally according to the total number of tokens in the liquidity pool and distributed automatically.</p>
+                    <p>The gambler network does not promise a clear reward to the players in the game. Instead, players win the prize pro rata across 5 different categories. The aim here is to create a peer-to-peer game of chance by eliminating the need for a central management of the game. Prize rates will be ultimately decided taking into account sustainability in the game.</p>
+                    <p>For example, let’s say a player aligns 5 fruits in the game and there are 86 million tokens in the prize pool. The total reward the player will receive is =( 86,000,000/100).(10)=8,600,000 tGt tokens.The probability of winning and reward rates in the game are as follows.</p>
+                    <!--  table -->
+
+                      <style>
+    .custom-table th,
+    .custom-table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .custom-table {
+      border: 2px solid #dee2e6;
+    }
+    .custom-table thead {
+      background-color: #f8f9fa;
+    }
+  </style>
+
+
+
+<div class="container my-5">
+  <div class="table-responsive">
+    <table class="table table-bordered custom-table">
+      <thead>
+        <tr>
+          <th style="color: #2d465e;">GROUP</th>
+          <th style="color: #2d465e;">
+NUMBER OF SIMILAR FRUITS</th>
+          <th style="color: #2d465e;">
+FORMULA</th>
+          <th style="color: #2d465e;">
+POSSIBILITY</th>
+          <th style="color: #2d465e;">
+prize pool</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A</td>
+          <td>7</td>
+          <td>1 ÷ (77)</td>
+          <td>0.00000121</td>
+          <td>%60</td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>6</td>
+          <td>1 ÷ (76)</td>
+          <td>0.00000849</td>
+          <td>%30</td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>5</td>
+          <td>1 ÷ (75)</td>
+          <td>0.0000594</td>
+          <td>%10</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>4</td>
+          <td>1 ÷ (74)</td>
+          <td>0.000416</td>
+          <td>%1</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>3</td>
+          <td>1 ÷ (73)</td>
+          <td>0.00291</td>
+          <td>%0.01</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Scalability</h3>
+                    <p class="fst-italic">The team is aware that one of the key risks for the project is scalability.But the team,It plans to minimize possible risks in this regard by taking an approach such as:</p>
+                    <!-- <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p> -->
+                                      <ul style="list-style-type: none;">
+             <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> By getting rid of unnecessary data load</li>
+              <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> competitive and encouraging node system</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> simple and fluid game design</li>
+
+            </ul>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="departments-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Applicability</h3>
+                    <p class="fst-italic">Although many blockchain projects are very good ideas, these projects have serious problems in applicability.Serious problems arise in the integration of these projects, which require very large data recording ranges, into blockchain.</p>
+                    <p>With the simple game structure and low data generation of slot games, it is easily integrated into decentralized applications. The virtual slot machine and gambler network, created using its unique reward distribution system and decentralized applications, will provide users with a safe, efficient and unique user experience.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+                 <div class="tab-pane" id="departments-tab-6">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Security</h3>
+                    <p class="fst-italic">The decentralized nature of dapps ensures there is no single point of failure, making them more resilient to downtime and certain types of hacking attempts.</p>
+                    <p>The transparent and immutable nature of blockchain technology ensures data integrity and reduces the likelihood of certain types of transaction fraud or manipulation.</p>
+           <p>Dapps give users more control over their data and digital assets. Since there is no central authority controlling the application, users can have the freedom to manage and transfer their data as they see fit.</p>
+
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+                 <div class="tab-pane" id="departments-tab-7">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Decentralized Autonomous Organizations (DAO)</h3>
+                    <p class="fst-italic">Each user can run a node on the blockchain to meet the needs of the decentralized application. by running node ;</p>
+                    <!-- <p>With the simple game structure and low data generation of slot games, it is easily integrated into decentralized applications. The virtual slot machine and gambler network, created using its unique reward distribution system and decentralized applications, will provide users with a safe, efficient and unique user experience.</p> -->
+                                        <ul style="list-style-type: none;">
+             <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> Organize in-network surveys and participate in in-network surveys.</li>
+              <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> Vote for the future of the network</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> Earn in-network mining rewards</li>
+
+            </ul>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+                       <div class="tab-pane" id="departments-tab-8">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Token economy</h3>
+                    <p class="fst-italic">The gambler has a disinflationist nature.The total token supply is limited to 1 billion.The structure of the gambler game eliminates the need for new token issuance.Each game is played with 1 tGt token, players must have a tGt token to play the game.The total supply will be distributed as follows.</p>
+                    <!-- <p>With the simple game structure and low data generation of slot games, it is easily integrated into decentralized applications. The virtual slot machine and gambler network, created using its unique reward distribution system and decentralized applications, will provide users with a safe, efficient and unique user experience.</p> -->
+                                        <ul style="list-style-type: none;">
+             <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> Organize in-network surveys and participate in in-network surveys.</li>
+              <li><i class="ri-check-double-line" style="text-align: justify !important;"></i> Vote for the future of the network</li>
+              <li><i class="ri-check-double-line"  style="text-align: justify !important;"></i> Earn in-network mining rewards</li>
+
+            </ul>
+
+            <div class="container my-5">
+  <div class="table-responsive">
+    <table class="table table-bordered custom-table">
+      <!-- <thead>
+        <tr>
+          <th style="color: #2d465e;">
+Team</th>
+          <th style="color: #2d465e;">
+%20</th>
+          <th style="color: #2d465e;">
+200.000.000/th>
+        </tr>
+      </thead> -->
+      <tbody>
+        <tr>
+          <td>Game development and promotion</td>
+          <td>%10</td>
+          <td>100.000.000</td>
+        </tr>
+        <tr>
+          <td>Airdrop</td>
+          <td>%10</td>
+          <td>100.000.000</td>
+        </tr>
+        <tr>
+          <td>Presale</td>
+          <td>%40</td>
+          <td>400.000.000</td>
+        </tr>
+        <tr>
+          <td>listing</td>
+          <td>%20</td>
+          <td>200.000.000</td>
+        </tr>
+        <tr>
+          <td>Team</td>
+          <td>%20</td>
+          <td>200.000.000</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Departments Section -->
+
+
+
+  </main>
+
+   <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 style="color: #2d465e;">Useful Links</h4>
+                         <ul style="list-style-type: none;">
+              <li><i class="bx bx-chevron-right"></i> <a href="contactus.html">Contact Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="raod-map.html">Road Map</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="https://etherscan.io/token/0x075db97493f572114db459c121299158cfb4bd39">the Gambler network</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="https://tgamblersteam.github.io/TheGamblersslot-test/">TheGambler DAppSlot Machine</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="service" style="color: #2d465e;"> Our Services </h4>
+                         <ul style="list-style-type: none;">
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Game</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+             
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+           <h4 style="color: #2d465e;">Contact Us </h4> 
+            <p>
+             
+              <strong>Email:</strong> community@thegamblernetwork.net<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3 style="color: #2d465e;">About tGt</h3>
+            <p>At tGt, our mission is driven by a vision to revolutionize the everyday lives of the citizens of the Kurdistan region and Sulaymaniyah city. We recognized the many untapped opportunities present in these areas and the need for pioneers in technology to address them. With a commitment to impactful innovation, we set out to tackle these challenges head-on.</p>
+            <div class="social-links mt-3">
+              <a href="https://x.com/TGamblernetwork" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://github.com/theGamblernetwork" class="facebook"><i class="bi bi-github"></i></a>
+              <a href="https://t.me/+2MdKSKf_-CgwMTk0" class="instagram"><i class="bi bi-telegram"></i></a>
+                  <a href="mailto:Community@thegamblernetwork.net" class="linkedin" aria-label="Send Email">
+               <i class="bi bi-envelope-at-fill"></i>
+                   </a>          
+                    </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>GtG</span></strong>. All Rights Reserved
+      </div>
+      
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9.4.1/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
